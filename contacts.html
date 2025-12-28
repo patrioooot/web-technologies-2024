@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="src/assets/styles/style.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <img src="logo.png" alt="Логотип" width="100">
+            <ul>
+                <nav class="breadcrumbs">
+                    <a href="index.html" class="breadcrumbs__item">Главная</a>
+                    <a href="contacts.html" class="breadcrumbs__item">Контакты</a> 
+                </nav>
+            </ul>
+    </header>
+
+
+    <main>
+        <h2>Contact Us</h2>
+        <p class="paragraph">Пишите нам</p>
+
+        <img src="baton.jpg" alt="Батон" width="350">
+
+        <h4>Address</h4>
+        <p class="paragraph">Тюмень</p>
+
+        <h4>Phone</h4>
+        <ul>
+            <li>+7 (800) 555-35-35</li>
+            <li>+7 (999) 888-77-66</li>
+        </ul>
+
+        <h4>Online service</h4>
+        <ul>
+            <li><a href="https://baton.ru">baton.ru</a></li>
+            <li><a href="mailto:baton@mail.ru">baton@mail.ru</a></li>
+        </ul>
+
+        <h4>Send us message</h4>
+        <form class="contact-form" action="#" method="post">
+            <label for="full-name">Full Name</label><br>
+            <input type="text" id="full-name" placeholder="Ваше имя"><br><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" id="email" placeholder="your.email@example.com"><br><br>
+
+            <label for="message">Message</label><br>
+            <textarea id="message" cols="30" rows="5" placeholder="Ваше сообщение..."></textarea><br><br>
+
+            <button class="submit-button">submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <h3>Свяжитесь с нами</h3>
+        <p class="paragraph">Мы всегда рады ответить на ваши вопросы.</p>
+        <hr>
+        <h4>Контакты</h4>
+        <ul>
+            <li>Адрес: Максима Горького, 70</li>
+            <li>Телефон: +7 (800) 555-35-35</li>
+            <li>Email: baton@mail.ru</li>
+        </ul>
+        <p class="paragraph">Все права защищены</p>
+    </footer>
+</body>
+</html>
