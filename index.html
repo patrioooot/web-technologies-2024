@@ -3,47 +3,380 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная</title>
+    <title>Мой сайт</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="src/assets/styles/style.css">
-
-
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="Логотип" width="100">
-            <ul>
-                <nav class="breadcrumbs">
-                    <a href="index.html" class="breadcrumbs__item">Главная</a>
-                    <a href="contacts.html" class="breadcrumbs__item">Контакты</a> 
+    <header class="site-header">
+        <div class="container header-container">
+            <div>
+                <a href="#" class="logo">Мой сайт</a>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+7 (123) 456-78-90</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+7 (098) 765-43-21</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@mysite.ru</span>
+                    </div>
+                </div>
+                <nav class="nav-menu">
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#media" class="nav-link">Media</a>
+                    <a href="#cases" class="nav-link">Cases</a>
+                    <a href="#faq" class="nav-link">FAQ</a>
+                    <a href="#contacts" class="nav-link">Contacts</a>
                 </nav>
-            </ul>
+            </div>
+        </div>
     </header>
 
     <main>
-        <h1>Пекарня "Батон"</h1>
-        <p class="paragraph">Батон — распространённый вид булочных изделий наряду с плетёными изделиями, булками, сайками и булочной мелочью.</p>
+        <section class="section">
+            <div class="container two-columns">
+                <div class="column">
+                    <h1>Профессиональные решения для вашего бизнеса</h1>
+                    <p>Мы предоставляем услуги по разработке и внедрению IT-решений, которые помогут вашему бизнесу стать более эффективным и конкурентоспособным на современном рынке.</p>
+                    
+                    <div class="application-form">
+                        <h2 class="form-title">Оставьте заявку</h2>
+                        <form id="application-form-1">
+                            <div class="form-group">
+                                <label for="phone-1" class="form-label">Номер телефона</label>
+                                <input type="tel" id="phone-1" class="form-input" placeholder="+7 (___) ___-__-__" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="name-1" class="form-label">ФИО</label>
+                                <input type="text" id="name-1" class="form-input" placeholder="Иванов Иван Иванович" required>
+                            </div>
+                            <button type="submit" class="submit-btn">Отправить заявку</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <img src="src/assets/img/phone.png" width="450">
+                </div>
+            </div>
+        </section>
 
-        <h3>Наши преимущества</h3>
-        <h4>Лучшие батоны в стране</h4>
-        <p class="paragraph">Мы гарантируем высокое качество батонов и соблюдение всех сроков изготовления выпечки.</p>
+        <section id="services" class="section">
+            <div class="container two-columns">
+                <div class="column">
+                    <h2 class="section-title">Services</h2>
+                    <p class="section-description">Мы предлагаем широкий спектр услуг, чтобы удовлетворить все ваши IT-потребности. Наша экспертиза охватывает различные области технологий.</p>
+                    
+                    <h3>Веб-разработка</h3>
+                    <p>Создаем современные, адаптивные и высоконагруженные веб-приложения с использованием передовых технологий и фреймворков.</p>
+                    
+                    <h3>Мобильная разработка</h3>
+                    <p>Разрабатываем кроссплатформенные и нативные мобильные приложения для iOS и Android, которые решают бизнес-задачи.</p>
+                </div>
+                
+                <div class="column">
+                    <div class="services-list">
+                        <a href="document1.html" class="service-link">Документ 1</a>
+                        <a href="document2.html" class="service-link">Документ 2</a>
+                        <a href="document3.html" class="service-link">Документ 3</a>
+                        <a href="document4.html" class="service-link">Документ 4</a>
+                        <a href="document5.html" class="service-link">Документ 5</a>
+                        <a href="document6.html" class="service-link">Документ 6</a>
+                        <a href="document7.html" class="service-link">Документ 7</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <h3>О нашей компании</h3>
-        <p class="paragraph">Наша пекари замешивают тесто секретным способом, благодаря которому батоны сохарняют свою свежесть около месяца.</p>
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Наши технологии</h2>
+                <p class="section-description">Мы используем современные технологии и инструменты для реализации проектов</p>
+                
+                <div class="three-column-list">
+                    <div class="list-item">JavaScript</div>
+                    <div class="list-item">React</div>
+                    <div class="list-item">Vue.js</div>
+                    <div class="list-item">Node.js</div>
+                    <div class="list-item">Python</div>
+                    <div class="list-item">Django</div>
+                    <div class="list-item">PHP</div>
+                    <div class="list-item">Laravel</div>
+                    <div class="list-item">MySQL</div>
+                    <div class="list-item">PostgreSQL</div>
+                    <div class="list-item">MongoDB</div>
+                    <div class="list-item">Docker</div>
+                    <div class="list-item">AWS</div>
+                    <div class="list-item">Git</div>
+                    <div class="list-item">Figma</div>
+                </div>
+            </div>
+        </section>
 
-        <hr>
+        <section id="cases" class="section">
+            <div class="container">
+                <div class="column">
+                    <h2 class="section-title">Cases</h2>
+                    <p class="section-description">Ознакомьтесь с нашими успешными проектами в различных отраслях бизнеса.</p>
+                </div>
+                
+                <div class="projects-menu">
+                    <div class="project-tab active" data-project="1">Project 1</div>
+                    <div class="project-tab" data-project="2">Project 2</div>
+                    <div class="project-tab" data-project="3">Project 3</div>
+                    <div class="project-tab" data-project="4">Project 4</div>
+                    <div class="project-tab" data-project="5">Project 5</div>
+                    <div class="project-tab" data-project="6">Project 6</div>
+                    <div class="project-tab" data-project="7">Project 7</div>
+                    <a href="all-projects.html" class="view-more-btn">View 100 more projects</a>
+                </div>
+                
+                <div class="project-content active" id="project-1">
+                    <div class="column">
+                        <h3>Project 1: Корпоративный портал</h3>
+                        <p>Разработка комплексного корпоративного портала для крупной производственной компании. Включает модули документооборота, кадрового учета и внутренней коммуникации.</p>
+                        
+                        <div class="project-stats">
+                            <div class="stat-item">
+                                <div class="stat-value">5,000+</div>
+                                <div class="stat-label">пользователей</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">98%</div>
+                                <div class="stat-label">удовлетворенность</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="column">
+                        <img src="src/assets/img/portal.png" alt="Project 1" class="feature-image">
+                    </div>
+                </div>
+                
+                <div class="project-content" id="project-2">
+                    <div class="column">
+                        <h3>Project 2: Мобильное приложение</h3>
+                        <p>Создание кроссплатформенного мобильного приложения для службы доставки еды. Включает функции заказа, отслеживания и онлайн-оплаты.</p>
+                        
+                        <div class="project-stats">
+                            <div class="stat-item">
+                                <div class="stat-value">50,000+</div>
+                                <div class="stat-label">скачиваний</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">4.8</div>
+                                <div class="stat-label">рейтинг в магазинах</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="column">
+                        <img src="src/assets/img/delivery.webp" width="450" alt="Project 2" class="feature-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section blue-bg">
+            <div class="container">
+                <h2 class="section-title">Начните сотрудничество с нами сегодня</h2>
+                <p class="section-description">Оставьте свои контактные данные, и наш специалист свяжется с вами в течение 30 минут для бесплатной консультации.</p>
+                
+                <div class="application-form" style="max-width: 600px; margin: 0 auto;">
+                    <form id="application-form-2">
+                        <div class="form-group">
+                            <label for="phone-2" class="form-label">Номер телефона</label>
+                            <input type="tel" id="phone-2" class="form-input" placeholder="+7 (___) ___-__-__" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="name-2" class="form-label">ФИО</label>
+                            <input type="text" id="name-2" class="form-input" placeholder="Иванов Иван Иванович" required>
+                        </div>
+                        <button type="submit" class="submit-btn">Получить консультацию</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Development stages</h2>
+                <p class="section-description">Мы следуем четкому процессу разработки, чтобы обеспечить высокое качество и своевременную реализацию проектов.</p>
+                
+                <div class="stages-grid">
+                    <div class="stage-card">
+                        <div class="stage-number">01</div>
+                        <h3>Анализ и планирование</h3>
+                        <p>Изучаем требования, анализируем рынок и конкурентов, разрабатываем план проекта с четкими этапами и сроками.</p>
+                    </div>
+                    <div class="stage-card">
+                        <div class="stage-number">02</div>
+                        <h3>Дизайн и прототипирование</h3>
+                        <p>Создаем прототипы и дизайн-макеты интерфейса, учитывая пользовательский опыт и бизнес-цели проекта.</p>
+                    </div>
+                    <div class="stage-card">
+                        <div class="stage-number">03</div>
+                        <h3>Разработка</h3>
+                        <p>Пишем чистый, поддерживаемый код, используя современные технологии и лучшие практики программирования.</p>
+                    </div>
+                    <div class="stage-card">
+                        <div class="stage-number">04</div>
+                        <h3>Тестирование</h3>
+                        <p>Проводим комплексное тестирование на всех уровнях: модульное, интеграционное, нагрузочное и пользовательское.</p>
+                    </div>
+                    <div class="stage-card">
+                        <div class="stage-number">05</div>
+                        <h3>Внедрение и запуск</h3>
+                        <p>Разворачиваем проект на продакшн-серверах, настраиваем мониторинг и проводим обучение пользователей.</p>
+                    </div>
+                    <div class="stage-card">
+                        <div class="stage-number">06</div>
+                        <h3>Поддержка и развитие</h3>
+                        <p>Обеспечиваем техническую поддержку, мониторим производительность и развиваем проект на основе обратной связи.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="media" class="section">
+            <div class="container two-columns">
+                <div class="column">
+                    <h2 class="section-title">Our team</h2>
+                    <p class="section-description">Наша команда состоит из опытных профессионалов, которые увлечены своей работой и постоянно развиваются в области IT-технологий.</p>
+                    
+                    <div class="team-stats">
+                        <div class="team-stat">
+                            <div class="team-stat-value">28</div>
+                            <div class="stat-label">member teams</div>
+                        </div>
+                        <div class="team-stat">
+                            <div class="team-stat-value">>100</div>
+                            <div class="stat-label">projects</div>
+                        </div>
+                        <div class="team-stat">
+                            <div class="team-stat-value">7</div>
+                            <div class="stat-label">years in IT sphere</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <img src="src/assets/img/team.webp" alt="Наша команда" class="feature-image">
+                </div>
+            </div>
+        </section>
+
+        <section class="section blue-bg">
+            <div class="container two-columns">
+                <div class="column">
+                    <h2 class="section-title">Get the book for free</h2>
+                    <p class="section-description">Скачайте нашу бесплатную книгу</p>
+                    
+                    <div class="application-form">
+                        <form id="ebook-form">
+                            <div class="form-group">
+                                <label for="phone-3" class="form-label">Номер телефона</label>
+                                <input type="tel" id="phone-3" class="form-input" placeholder="+7 (___) ___-__-__" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="name-3" class="form-label">ФИО</label>
+                                <input type="text" id="name-3" class="form-input" placeholder="Иванов Иван Иванович" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Почта</label>
+                                <input type="email" id="email" class="form-input" placeholder="example@mail.ru" required>
+                            </div>
+                            <button type="submit" class="submit-btn">Send me ebook to my mail</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <img src="src/assets/img/book.png" alt="Книга" class="feature-image">
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="section">
+            <div class="container">
+                <h2 class="section-title">FAQ</h2>
+                <p class="section-description">Ответы на часто задаваемые вопросы о наших услугах и процессе работы.</p>
+                
+                <div class="faq-container">
+                    <div class="faq-item active">
+                        <div class="faq-question">
+                            <h3>Сколько времени занимает разработка проекта?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Время разработки зависит от сложности и объема проекта. Простой лендинг может быть создан за 1-2 недели, в то время как комплексное веб-приложение может потребовать от 3 до 6 месяцев. После анализа требований мы предоставляем точные сроки реализации.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Какой стек технологий вы используете?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Мы используем современные технологии, включая JavaScript (React, Vue.js, Node.js), Python (Django, Flask), PHP (Laravel), базы данных (MySQL, PostgreSQL, MongoDB), а также инструменты для DevOps (Docker, AWS, Git). Технологический стек выбирается исходя из требований проекта.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Предоставляете ли вы техническую поддержку после запуска?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Да, мы предлагаем различные пакеты технической поддержки после запуска проекта. Это может включать исправление ошибок, обновления безопасности, консультации и добавление нового функционала. Условия поддержки обсуждаются индивидуально для каждого проекта.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Как происходит процесс оплаты?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Мы работаем по гибкой модели оплаты. Для небольших проектов возможна предоплата 50% и 50% после сдачи проекта. Для крупных проектов мы разбиваем оплату по этапам: анализ, дизайн, разработка, тестирование. Все условия фиксируются в договоре.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <h3>Свяжитесь с нами</h3>
-        <p class="paragraph">Мы всегда рады ответить на ваши вопросы.</p>
-        <hr>
-        <h4>Контакты</h4>
-        <ul>
-            <li>Адрес: Максима Горького, 70</li>
-            <li>Телефон: +7 (800) 555-35-35</li>
-            <li>Email: baton@mail.ru</li>
-        </ul>
-        <p class="paragraph">Все права защищены</p>
+    <footer id="contacts" class="site-footer">
+        <div class="container">
+            <div class="footer-logo">Мой сайт</div>
+            
+            <div class="footer-contacts">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+7 (123) 456-78-90</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+7 (098) 765-43-21</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>info@mysite.ru</span>
+                </div>
+            </div>
+            
+            <div class="footer-address">
+                <p>г. Тюмень, ул. Республики, д. 10, офис 25</p>
+                <p>Все права защищены.</p>
+            </div>
+        </div>
     </footer>
+    <script src="src/assets/js/script.js"></script>
 </body>
 </html>
