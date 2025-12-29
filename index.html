@@ -10,61 +10,70 @@
 <body>
     <header class="site-header">
         <div class="container header-container">
-            <div>
-                <a href="#" class="logo">Мой сайт</a>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <span>+7 (123) 456-78-90</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <span>+7 (098) 765-43-21</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>info@mysite.ru</span>
-                    </div>
+            <a href="#" class="logo">Мой сайт</a>
+        
+            <nav class="nav-menu">
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#media" class="nav-link">Media</a>
+                <a href="#cases" class="nav-link">Cases</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#contacts" class="nav-link">Contacts</a>
+            </nav>
+        
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone contact-icon"></i>
+                    <span class="contact-text">+7 (123) 456-78-90</span>
                 </div>
-                <nav class="nav-menu">
-                    <a href="#services" class="nav-link">Services</a>
-                    <a href="#media" class="nav-link">Media</a>
-                    <a href="#cases" class="nav-link">Cases</a>
-                    <a href="#faq" class="nav-link">FAQ</a>
-                    <a href="#contacts" class="nav-link">Contacts</a>
-                </nav>
+                <div class="contact-item">
+
+                    <span class="contact-text">+7 (098) 765-43-21</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <span class="contact-text">info@mysite.ru</span>
+                </div>
             </div>
         </div>
     </header>
 
     <main>
-        <section class="section">
-            <div class="container two-columns">
-                <div class="column">
-                    <h1>Профессиональные решения для вашего бизнеса</h1>
-                    <p>Мы предоставляем услуги по разработке и внедрению IT-решений, которые помогут вашему бизнесу стать более эффективным и конкурентоспособным на современном рынке.</p>
-                    
-                    <div class="application-form">
-                        <h2 class="form-title">Оставьте заявку</h2>
-                        <form id="application-form-1">
-                            <div class="form-group">
-                                <label for="phone-1" class="form-label">Номер телефона</label>
-                                <input type="tel" id="phone-1" class="form-input" placeholder="+7 (___) ___-__-__" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="name-1" class="form-label">ФИО</label>
-                                <input type="text" id="name-1" class="form-input" placeholder="Иванов Иван Иванович" required>
-                            </div>
-                            <button type="submit" class="submit-btn">Отправить заявку</button>
-                        </form>
+
+        <section class="section hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Development of <span class="highlight">mobile applications</span> and <span class="highlight">web services</span> of any complexity</h1>
+                    <p class="hero-description">We create mobile applications for iOS, Android that transfer your business to mobile applications of your customers' devices</p>
+            
+            <div class="application-form hero-form">
+                <h3 class="form-title">Leave your contacts and we will call you back within 30 minutes</h3>
+                <form id="application-form-1" class="hero-form-fields">
+                    <div class="form-group">
+                        <label for="phone-1" class="form-label">Phone number</label>
+                        <input type="tel" id="phone-1" class="form-input" placeholder="+7 (___) ___-__-__" required>
                     </div>
-                </div>
+                    <div class="form-group">
+                        <label for="name-1" class="form-label">Full name</label>
+                        <input type="text" id="name-1" class="form-input" placeholder="Иванов Иван Иванович" required>
+                    </div>
+                    <button type="submit" class="submit-btn hero-submit-btn">Get consultation</button>
+                </form>
+            </div>
+        </div>            
+                <div class="hero-right">
                 
-                <div class="column">
-                    <img src="src/assets/img/phone.png" width="450">
-                </div>
+                    <div class="img-wrapper img-1">
+    
+                        <img src="src/assets/img/column-left.webp" class="phone-img">
+                    </div>
+                    <div class="img-wrapper img-2" > 
+                        <img src="src/assets/img/column-right.webp" class="phone-img ">
+                    </div>
+            
             </div>
         </section>
+
+
 
         <section id="services" class="section">
             <div class="container two-columns">
@@ -353,30 +362,48 @@
     </main>
 
     <footer id="contacts" class="site-footer">
-        <div class="container">
+        <div class="container footer-container">
             <div class="footer-logo">Мой сайт</div>
-            
+        
             <div class="footer-contacts">
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <span>+7 (123) 456-78-90</span>
+                <div class="contact-column">
+                    <div class="contact-category">
+                        <i class="fas fa-phone contact-icon"></i>
+                        <span class="category-label">Contacts nums</span>
+                    </div>
+                    <div class="contact-numbers">
+                        <span class="footer-contact-text">+7 (123) 456-78-90</span>
+
+                    </div>
                 </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <span>+7 (098) 765-43-21</span>
+            
+                <div class="contact-column">
+                    <div class="contact-category">
+                        <i class="fas fa-envelope contact-icon"></i>
+                        <span class="category-label">Email</span>
+                    </div>
+                    <div class="contact-email">
+                        <span class="footer-contact-text">info@mysite.ru</span>
+                    </div>
                 </div>
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <span>info@mysite.ru</span>
+            
+                <div class="contact-column">
+                    <div class="contact-category">
+                        <i class="fas fa-map-marker-alt contact-icon"></i>
+                        <span class="category-label">Address</span>
+                    </div>
+                    <div class="contact-address">
+                        <span class="footer-contact-text">г. Тюмень, ул. Республики, д. 10, офис 25</span>
+                    </div>
                 </div>
             </div>
-            
-            <div class="footer-address">
-                <p>г. Тюмень, ул. Республики, д. 10, офис 25</p>
-                <p>Все права защищены.</p>
+        
+            <div class="footer-copyright">
+                <p> Все права защищены.</p>
             </div>
         </div>
     </footer>
+
     <script src="src/assets/js/script.js"></script>
 </body>
 </html>
